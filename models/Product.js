@@ -27,14 +27,14 @@ Product.init(
     product_name: {
       type: DataTypes.String,
       allowNull:false,
-    }
+    },
     price: {
       type:DataTypes.Decimal,
       allowNull: false,
       validate:{
         isDecimal: true,
       }
-    }
+    },
     stock: {
       type:DataTypes.Integer,
       allowNull: false,
