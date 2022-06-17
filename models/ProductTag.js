@@ -3,7 +3,7 @@ const dataTypes = require('sequelize/lib/data-types');
 
 const sequelize = require('../config/connection');
 
-class ProductTag extends Model {}
+class ProductTag extends Model { }
 
 ProductTag.init(
   {
@@ -15,13 +15,13 @@ ProductTag.init(
     },
     product_id: {
       type: DataTypes.STRING,
-      references:{
+      references: {
         model: 'product',
         key: 'id',
       }
     },
-    tag_id:{
-      type:dataTypes.INTEGER,
+    tag_id: {
+      type: dataTypes.INTEGER,
       references: {
         model: 'tag',
         key: "id",
